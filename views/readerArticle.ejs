@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader Article</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="grid-container- main">
+        <header>
+            <h1>READER: READ ARTICLE</h1>
+
+            <%auSetDisplays.forEach(function(display){%>
+                <h2><%=display.blogTitle%></h2>
+                <h3><%=display.blogSubtitle%></h3>
+                <h4><%=display.auName%></h4>
+            <%})%>
+        </header>
+
+        <br>
+
+        <div class="readerHome">
+            <a href="/reader/home"><button>READER HOMEPAGE</button></a>
+        </div>
+
+        <div class="artDetails">
+            <%readArticles.forEach(function(article){%>
+                <div class="artDetail">
+                    <h2><%=article.title%></h2>
+                    <h6><%=article.published%></h6>
+                    <h4><%=article.subtitle%></h4>
+                    <p><%=article.body%></p>
+            
+                    <br>
+            
+                    <form action="/reader/article" method="POST">
+                        <button id="likeBut" name="likeBut" value="<%=article.pubID%>">LIKE <%=article.likes%></button>
+                    </form>
+            
+                    <br>
+                    <form name="commentForm" action="/reader/article" method="POST">
+                        <label for="commentBox">Comment text:</label>
+                        <br>
+
+                        <textarea rows="6" cols="45" id="commentBox" name="commentBox" maxlength="150" required></textarea>
+                        <br>
+                        
+                        <button id="commentBut" name="commentBut" value="<%=article.pubID%>" type="submit">ADD COMMENT</button>
+                    </form>
+                </div>
+            <%})%>
+            
+            <%commentsList.forEach(function(comment){%>
+                <ul style="list-style-type: none;">
+                    <li><%=comment.comWords%></li>
+                    <li><%=comment.comPublished%></li>
+                </ul>
+            <%})%>
+        </div>
+    
+    </div>
+</body>
+</html>

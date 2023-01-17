@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="grid-container-main">
+        <header>
+            <h1>AUTHOR HOMEPAGE</h1>
+
+            <%auSetDisplays.forEach(function(display){%>
+                <h2><%=display.blogTitle%></h2>
+                <h3><%=display.blogSubtitle%></h3>
+                <h4><%=display.auName%></h4>
+            <%})%>
+        </header>
+
+        <br>
+
+        <div class="settings">
+            <a href="/author/settings"><button>SETTINGS</button></a>
+        </div>
+
+        <div class="draftButton">
+            <form action="/author/article/edit" method="GET">
+                <button id="craftBut" name="craftBut" value="newCraft" type="submit">CREATE NEW DRAFT</button>
+            </form>
+        </div>
+
+        <br>
+
+        <h2 class="draH2">DRAFT ARTICLES</h2>
+
+        <div class="draftArticles">
+            <%draftArticles.forEach(function(article){%>
+                <div class="draArticle">
+                    <h5><%=article.title%></h5>
+                    <h6><%=article.subtitle%></h6>
+                    <p><%=article.created%></p>
+                    <p><%=article.lastModified%></p>
+
+                    <form action="/author/article/edit" method="GET">
+                        <button id="ediBut" name="ediBut" value="<%=article.draID%>" type="submit">EDIT</button>
+                    </form>          
+
+                    <form action="/author/home" method="POST">
+                        <button id="pubBut" name="pubBut" onclick="return confirm('Are you sure?')" value="<%=article.draID%>" type="submit">PUBLISH</button>
+                        
+                        <br>
+
+                        <button id="delBut" name="delBut" value="<%=article.draID%>" type="submit">DELETE</button>
+                    </form>
+                </div>                                   
+            <%})%>
+        </div>
+
+        
+
+        <h2 class="pubH2">PUBLISHED ARTICLES</h2>
+
+        <div class="pubArticles">
+            <%pubArticles.forEach(function(article){%>
+                <div class="pubArticle">
+                    <h5><%=article.title%></h5>
+                    <h6><%=article.subtitle%></h6>
+                    <p><%=article.created%></p>
+                    <p><%=article.published%></p>
+                    <p><%=article.likes%></p>
+                
+                    <button id="shareBut" value="<%=article.pubID%>" type="button" onclick="alert('http://localhost:3000/reader/article?readBut=' + <%=article.pubID%>)">SHARE</button>
+
+                    <form action="/author/home" method="POST">                    
+                        <button id="pubDelBut" name="pubDelBut" value="<%=article.pubID%>" type="submit">DELETE</button>
+                    </form>
+                </div>
+            <%})%>
+        </div>
+        
+    </div>
+</body>
+</html>

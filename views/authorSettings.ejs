@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Settings</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="grid-container-main">
+        <header>
+            <h1>AUTHOR SETTINGS</h1>
+
+            <%auSettings.forEach(function(author){%>
+                <h2><%=author.blogTitle%></h2>
+                <h3><%=author.blogSubtitle%></h3>
+                <h4><%=author.auName%></h4>
+            <%})%>
+        </header>
+
+        <br>
+
+        <div class="authorHome">
+            <a href="/author/home"><button>AUTHOR HOMEPAGE</button></a>
+        </div>
+
+        <br>
+
+        <div class="setAuthors">
+            <%auSettings.forEach(function(author){%>
+                <div class="setAuthor">
+                    <form action="/author/home" method="POST">
+                        <label for="blogTitle">Blog Title:</label>
+                        <br>
+
+                        <input id="blogTitle" name="blogTitle" type="text" maxlength="75" value="<%=author.blogTitle%>" required>
+                        <br>
+        
+                        <label for="blogSubtitle">Blog Subtitle:</label>
+                        <br>
+
+                        <input id="blogSubtitle" name="blogSubtitle" maxlength="50" value="<%=author.blogSubtitle%>" required>
+                        <br>
+        
+                        <label for="auName">Author Name:</label>
+                        <br>
+
+                        <input id="auName" name="auName" maxlength="75" value="<%=author.auName%>" required>
+                        <br>
+        
+                        <button id="upSetBut" name="upSetBut" value="<%=author.auID%>">UPDATE</button>
+                    </form>
+                </div>
+            <%})%>
+        </div>
+    </div>
+</body>
+</html>

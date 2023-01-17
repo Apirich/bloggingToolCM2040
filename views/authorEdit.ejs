@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Article Edit</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="grid-container-main">
+        <header>
+            <h1>AUTHOR: EDIT AN ARTICLE</h1>
+
+            <%auSetDisplays.forEach(function(display){%>
+                <h2><%=display.blogTitle%></h2>
+                <h3><%=display.blogSubtitle%></h3>
+                <h4><%=display.auName%></h4>
+            <%})%>
+        </header>
+
+        <br>
+
+        <div class="authorHome">
+            <a href="/author/home"><button>AUTHOR HOMEPAGE</button></a>
+        </div>
+
+        <div class="editArticles">
+            <%editArticles.forEach(function(article){%>
+                <div class="editArticle">
+                    <ul style="list-style-type: none;">
+                        <li>Created:  <%=article.created%></li>
+                        <li>Last modified: <%=article.lastModified%></li>
+                        <li>Status: Draft</li>
+                    </ul>
+            <%})%>
+                
+                    <form action="/author/home" method="POST">
+                        <label for="title">Title: </label>
+                        <input id="title" type="text" name="title" maxlength="75" <%editArticles.forEach(function(article){%> value="<%=article.title%>" <%})%> required/>
+                        <br>
+
+                        <label for="subtitle">Subtitle: </label>
+                        <input id="subtitle" type="text" name="subtitle" maxlength="50" <%editArticles.forEach(function(article){%> value="<%=article.subtitle%>" <%})%> required/>
+                        <br>
+
+                        <label for="body">Body: </label>
+                        <br>
+
+                        <textarea rows="15" cols="70" id="body" name="body" type="text" maxlength="1000" required><%editArticles.forEach(function(article){%> <%=article.body%> <%})%></textarea>
+                        <br>
+                        
+                        <button id="upBut" name="upBut" <%editArticles.forEach(function(article){%> value="<%=article.draID%>" <%})%> type="submit">UPDATE</button>                       
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

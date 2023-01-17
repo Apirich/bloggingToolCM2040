@@ -1,0 +1,1061 @@
+/*Common CSS------------------------*/
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    body{
+        background: rgb(146, 184, 179);
+        height: 100%;
+    }
+    
+    h1{
+        font: normal normal bold 1em Arial, Helvetica, sans-serif;
+        color: rgb(27, 50, 92);
+    }
+    
+    h2{
+        font: normal normal bold 21px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    h3{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+
+    h4{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(9, 58, 87);
+    }
+
+    h5{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(27, 50, 92);
+    }
+
+    h6{
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    p{
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+        color: rgb(5, 15, 31);
+    }
+}
+
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    body{
+        background: rgb(146, 184, 179);
+        height: 100%;
+    }
+    
+    h1{
+        font: normal normal bold 2em Arial, Helvetica, sans-serif;
+        color: rgb(27, 50, 92);
+    }
+    
+    h2{
+        font: normal normal bold 25px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    h3{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+
+    h4{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(9, 58, 87);
+    }
+
+    h5{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(27, 50, 92);
+    }
+
+    h6{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    p{
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+        color: rgb(5, 15, 31);
+    }
+}
+
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    body{
+        background: rgb(146, 184, 179);
+        height: 100%;
+    }
+    
+    h1{
+        font: normal normal bold 3em Arial, Helvetica, sans-serif;
+        color: rgb(27, 50, 92);
+    }
+    
+    h2{
+        font: normal normal bold 29px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+
+    h3{
+        font: normal normal bold 27px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    h4{
+        font: normal normal bold 24px Arial, Helvetica, sans-serif;
+        color: rgb(9, 58, 87);
+    }
+
+    h5{
+        font: normal normal bold 22px Arial, Helvetica, sans-serif;
+        color: rgb(27, 50, 92);
+    }
+
+    h6{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+
+    
+    p{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(5, 15, 31);
+    }
+}
+
+
+
+
+/* Header CSS------------------------ */
+header{grid-area: header;}
+
+header{
+    background: rgb(146, 184, 179);
+    text-align: center;
+}
+
+
+
+
+/* ------------------ AUTHOR HOMEPAGE ------------------- */
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .settings a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        margin-bottom: 30px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .draftButton #craftBut{
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .draH2{
+        color: rgb(0, 95, 139);
+    }
+
+    .draftArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .draftArticles .draArticle{
+        overflow: hidden;
+        overflow: auto;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .draftArticles .draArticle p{}
+
+    .draftArticles .draArticle form #ediBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .draftArticles .draArticle form #pubBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .draftArticles .draArticle form #delBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .pubH2{
+        color: rgb(26, 94, 31);
+    }
+
+    .pubArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .pubArticles .pubArticle{
+        overflow: hidden;
+        overflow: auto;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(156, 199, 160);
+    }
+
+    .pubArticles .pubArticle p{}
+
+    .pubArticles .pubArticle #shareBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(26, 94, 31);
+        color: white;
+    }
+
+    .pubArticles .pubArticle form #pubDelBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(26, 94, 31);
+        color: white;
+    }
+}
+
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .settings a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        margin-bottom: 30px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .draftButton #craftBut{
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .draH2{
+        color: rgb(0, 95, 139);
+    }
+
+    .draftArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .draftArticles .draArticle{
+        overflow: hidden;
+        overflow: auto;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .draftArticles .draArticle p{}
+
+    .draftArticles .draArticle form #ediBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .draftArticles .draArticle form #pubBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .draftArticles .draArticle form #delBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .pubH2{
+        color: rgb(26, 94, 31);
+    }
+
+    .pubArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .pubArticles .pubArticle{
+        overflow: hidden;
+        overflow: auto;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(156, 199, 160);
+    }
+
+    .pubArticles .pubArticle p{}
+
+    .pubArticles .pubArticle #shareBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(26, 94, 31);
+        color: white;
+    }
+
+    .pubArticles .pubArticle form #pubDelBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(26, 94, 31);
+        color: white;
+    }
+}
+
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){  
+    .settings a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        margin-bottom: 30px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .draftButton #craftBut{
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .draH2{
+        color: rgb(0, 95, 139);
+    }
+
+    .draftArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .draftArticles .draArticle{
+        overflow: hidden;
+        overflow: auto;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .draftArticles .draArticle p{}
+
+    .draftArticles .draArticle form #ediBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .draftArticles .draArticle form #pubBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .draftArticles .draArticle form #delBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .pubH2{
+        color: rgb(26, 94, 31);
+    }
+
+    .pubArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .pubArticles .pubArticle{
+        overflow: hidden;
+        overflow: auto;
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(156, 199, 160);
+    }
+
+    .pubArticles .pubArticle p{}
+
+    .pubArticles .pubArticle #shareBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(26, 94, 31);
+        color: white;
+    }
+
+    .pubArticles .pubArticle form #pubDelBut{
+        margin: 0 0 10px 0;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(26, 94, 31);
+        color: white;
+    }
+}
+
+
+
+
+/* ------------------ AUTHOR SETTINGS PAGE ------------------- */
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .authorHome a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .setAuthors{}
+
+    .setAuthors .setAuthor{
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .setAuthors .setAuthor form label{
+        padding: 5px 5px 5px 5px;
+        color:  rgb(5, 15, 31);
+    }
+
+    .setAuthors .setAuthor form #upSetBut{
+        margin-top: 30px;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+}
+
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .authorHome a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .setAuthors{}
+
+    .setAuthors .setAuthor{
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .setAuthors .setAuthor form label{
+        padding: 5px 5px 5px 5px;
+        color:  rgb(5, 15, 31);
+    }
+
+    .setAuthors .setAuthor form #upSetBut{
+        margin-top: 30px;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+}
+
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){  
+    .authorHome a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .setAuthors{}
+
+    .setAuthors .setAuthor{
+        text-align: center;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .setAuthors .setAuthor form label{
+        padding: 5px 5px 5px 5px;
+        color:  rgb(5, 15, 31);
+    }
+
+    .setAuthors .setAuthor form #upSetBut{
+        margin-top: 30px;
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+}
+
+
+
+
+/* -------- AUTHOR EDIT PAGE --------- */
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .authorHome a button{
+        margin-bottom: 30px;
+        padding: 3px 3px 3px 3px;
+        text-decoration: none;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .editArticles{
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .editArticles form label{
+        color: rgb(5, 15, 31);
+    }
+
+    .editArticles form #upBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .editArticles .editArticle{}
+
+    .editArticles .editArticle form label{
+        color: rgb(5, 15, 31);
+    }
+
+    .editArticles .editArticle form #upBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+}
+
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .authorHome a button{
+        margin-bottom: 30px;
+        padding: 3px 3px 3px 3px;
+        text-decoration: none;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .editArticles{
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .editArticles form label{
+        color: rgb(5, 15, 31);
+    }
+
+    .editArticles form #upBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .editArticles .editArticle{}
+
+    .editArticles .editArticle form label{
+        color: rgb(5, 15, 31);
+    }
+
+    .editArticles .editArticle form #upBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+}
+
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){  
+    .authorHome a button{
+        margin-bottom: 30px;
+        padding: 3px 3px 3px 3px;
+        text-decoration: none;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .editArticles{
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .editArticles form label{
+        color: rgb(5, 15, 31);
+    }
+
+    .editArticles form #upBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .editArticles .editArticle{}
+
+    .editArticles .editArticle form label{
+        color: rgb(5, 15, 31);
+    }
+
+    .editArticles .editArticle form #upBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+}
+
+
+
+
+/* -------- READER HOMEPAGE --------- */
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .readArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .readArticles .readArticle{}
+
+    .readArticles .readArticle form{}
+
+    .readArticles .readArticle form #readBut{
+        overflow: hidden;
+        overflow: auto;
+        /* padding: 3px 3px 3px 3px; */
+        margin-bottom: 30px;
+        width: 300px;
+        height: 300px;
+        border: 0;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .readArticles .readArticle form #readBut p{}
+}
+
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .readArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .readArticles .readArticle{}
+
+    .readArticles .readArticle form{}
+
+    .readArticles .readArticle form #readBut{
+        overflow: hidden;
+        overflow: auto;
+        /* padding: 3px 3px 3px 3px; */
+        margin-bottom: 30px;
+        width: 300px;
+        height: 300px;
+        border: 0;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .readArticles .readArticle form #readBut p{}
+}
+
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){  
+    .readArticles{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+    }
+
+    .readArticles .readArticle{}
+
+    .readArticles .readArticle form{}
+
+    .readArticles .readArticle form #readBut{
+        overflow: hidden;
+        overflow: auto;
+        /* padding: 3px 3px 3px 3px; */
+        margin-bottom: 30px;
+        width: 300px;
+        height: 300px;
+        border: 0;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .readArticles .readArticle form #readBut p{}
+}
+
+
+
+
+/* -------- READER ARTICLE PAGE --------- */
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .readerHome a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .artDetails{}
+
+    .artDetails .artDetail{
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .artDetails .artDetail form{}
+
+    .artDetails .artDetail form #likeBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .artDetails .artDetail form label{
+        padding: 5px 5px 5px 5px;
+        color: rgb(0, 95, 139);;
+    }
+
+    .artDetails .artDetail form #commentBut{
+        padding: 6px 6px 6px 6px;
+        width: max-content;
+        height: max-content;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .artDetails ul{}
+
+    .artDetails ul li{
+        text-align: center;
+        color: rgb(124, 18, 18);
+    }
+}
+
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .readerHome a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .artDetails{}
+
+    .artDetails .artDetail{
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .artDetails .artDetail form{}
+
+    .artDetails .artDetail form #likeBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .artDetails .artDetail form label{
+        padding: 5px 5px 5px 5px;
+        color: rgb(0, 95, 139);;
+    }
+
+    .artDetails .artDetail form #commentBut{
+        padding: 6px 6px 6px 6px;
+        width: max-content;
+        height: max-content;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .artDetails ul{}
+
+    .artDetails ul li{
+        text-align: center;
+        color: rgb(124, 18, 18);
+    }
+}
+
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){  
+    .readerHome a button{
+        text-decoration: none;
+        padding: 3px 3px 3px 3px;
+        width: 150px;
+        height: 50px;
+        border: 0;
+        background-color: rgb(148, 0, 32);
+        color: white;
+    }
+
+    .artDetails{}
+
+    .artDetails .artDetail{
+        text-align: center;
+        margin: 20px;
+        padding: 30px;
+        background-color: rgb(142, 187, 202);
+    }
+
+    .artDetails .artDetail form{}
+
+    .artDetails .artDetail form #likeBut{
+        padding: 3px 3px 3px 3px;
+        width: 70px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .artDetails .artDetail form label{
+        padding: 5px 5px 5px 5px;
+        color: rgb(0, 95, 139);;
+    }
+
+    .artDetails .artDetail form #commentBut{
+        padding: 6px 6px 6px 6px;
+        width: max-content;
+        height: max-content;
+        border: 0;
+        background-color: rgb(0, 95, 139);
+        color: white;
+    }
+
+    .artDetails ul{}
+
+    .artDetails ul li{
+        text-align: center;
+        color: rgb(124, 18, 18);
+    }
+}
+
+
+

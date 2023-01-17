@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="grid-container-main">
+        <header>
+            <h1>READER HOMEPAGE</h1>
+
+            <%auSetDisplays.forEach(function(display){%>
+                <h2><%=display.blogTitle%></h2>
+                <h3><%=display.blogSubtitle%></h3>
+                <h4><%=display.auName%></h4>
+            <%})%>
+        </header>
+
+        <br>
+        <h2>ARTICLES</h2>
+
+        <div class="readArticles">
+            <%listPubArticles.forEach(function(article){%>  
+                <div class="readArticle">
+                    <form action="/reader/article" method="GET">
+                        <button id="readBut" name="readBut" value="<%=article.pubID%>" type="submit">
+                            <p><%=article.title%></p>
+                            <p><%=article.subtitle%></p>
+                            <p><%=article.published%></p>
+                        </button>
+                    </form>
+                </div>  
+            <%})%>
+        </div>
+    </div>
+</body>
+</html>
